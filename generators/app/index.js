@@ -56,7 +56,7 @@ module.exports = yeoman.generators.Base.extend({
         this.installDesign = this.props.installDesign;
 
         if (!this.installDesign) {
-            done();
+            return;
         }
 
         jhipsterFunc.addBowerDependency('bootstrap', '3.3.6');
@@ -77,15 +77,13 @@ module.exports = yeoman.generators.Base.extend({
 
     install: function () {
         var injectDependenciesAndConstants = function () {
-            if (this.install) {
-                switch (this.frontendBuilder) {
-                    case 'gulp':
-                        this.spawnCommand('gulp', ['ngconstant:dev', 'wiredep:test', 'wiredep:app']);
-                        break;
-                    case 'grunt':
-                    default:
-                        this.spawnCommand('grunt', ['ngconstant:dev', 'wiredep']);
-                }
+            switch (this.frontendBuilder) {
+                case 'gulp':
+                    this.spawnCommand('gulp', ['ngconstant:dev', 'wiredep:test', 'wiredep:app']);
+                    break;
+                case 'grunt':
+                default:
+                    this.spawnCommand('grunt', ['ngconstant:dev', 'wiredep']);
             }
         };
 
