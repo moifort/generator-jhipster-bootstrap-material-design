@@ -10,6 +10,7 @@ This is a [JHipster](http://jhipster.github.io/) module, that is meant to be use
 
 ![](/static/generator-jhipster-bootstrap-material-design-demo.gif)
 
+
 ## Installation
 
 As this is a [JHipster](http://jhipster.github.io/) module, we expect you have JHipster and its related tools already installed.
