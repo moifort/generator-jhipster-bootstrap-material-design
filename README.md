@@ -49,7 +49,7 @@ Material Design for Bootstrap is a theme for Bootstrap 3 which lets you use the 
 
 ## License
 
-Apache-2.0 © Thibaut Mottet
+WTFPL-2.0 © Thibaut Mottet
 
 
 [npm-image]: https://img.shields.io/npm/v/generator-jhipster-bootstrap-material-design.svg
