@@ -6,9 +6,9 @@
 
 This is a [JHipster](http://jhipster.github.io/) module, that is meant to be use in a JHipster application.
 
-![](/static/generator-jhipster-bootstrap-material-design-install.gif)
+![](https://raw.githubusercontent.com/moifort/generator-jhipster-bootstrap-material-design/master/static/generator-jhipster-bootstrap-material-design-install.gif)
 
-![](/static/generator-jhipster-bootstrap-material-design-demo.gif)
+![](https://raw.githubusercontent.com/moifort/generator-jhipster-bootstrap-material-design/master/static/generator-jhipster-bootstrap-material-design-demo.gif)
 
 
 ## Installation
@@ -34,23 +34,23 @@ Material Design for Bootstrap is a theme for Bootstrap 3 which lets you use the 
 
 ## Screenshot
 
-![](/static/jhipster-bootstrap-material-design-1.png)
+![](https://raw.githubusercontent.com/moifort/generator-jhipster-bootstrap-material-design/master/static/jhipster-bootstrap-material-design-1.png)
 
-![](/static/jhipster-bootstrap-material-design-2.png)
+![](https://raw.githubusercontent.com/moifort/generator-jhipster-bootstrap-material-design/master/static/jhipster-bootstrap-material-design-2.png)
 
-![](/static/jhipster-bootstrap-material-design-3.png)
+![](https://raw.githubusercontent.com/moifort/generator-jhipster-bootstrap-material-design/master/static/jhipster-bootstrap-material-design-3.png)
 
-![](/static/jhipster-bootstrap-material-design-4.png)
+![](https://raw.githubusercontent.com/moifort/generator-jhipster-bootstrap-material-design/master/static/jhipster-bootstrap-material-design-4.png)
 
-![](/static/jhipster-bootstrap-material-design-5.png)
+![](https://raw.githubusercontent.com/moifort/generator-jhipster-bootstrap-material-design/master/static/jhipster-bootstrap-material-design-5.png)
 
-![](/static/jhipster-bootstrap-material-design-6.png)
+![](https://raw.githubusercontent.com/moifort/generator-jhipster-bootstrap-material-design/master/static/jhipster-bootstrap-material-design-6.png)
 
-![](/static/jhipster-bootstrap-material-design-7.png)
+![](https://raw.githubusercontent.com/moifort/generator-jhipster-bootstrap-material-design/master/static/jhipster-bootstrap-material-design-7.png)
 
 ## License
 
-Apache-2.0 © Thibaut Mottet
+WTFPL-2.0 © Thibaut Mottet
 
 
 [npm-image]: https://img.shields.io/npm/v/generator-jhipster-bootstrap-material-design.svg

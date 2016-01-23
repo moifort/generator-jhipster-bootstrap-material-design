@@ -52,6 +52,7 @@ module.exports = yeoman.generators.Base.extend({
         this.packageName = jhipsterVar.packageName;
         this.angularAppName = jhipsterVar.angularAppName;
         this.frontendBuilder = jhipsterVar.frontendBuilder;
+        this.useSass = jhipsterVar.useSass;
 
         this.installDesign = this.props.installDesign;
 
@@ -59,18 +60,27 @@ module.exports = yeoman.generators.Base.extend({
             return;
         }
 
+        // Add dependencies
         jhipsterFunc.addBowerDependency('bootstrap', '3.3.6');
         jhipsterFunc.addBowerDependency('arrive', '2.3.0');
         jhipsterFunc.addBowerDependency('bootstrap-material-design', '0.5.6');
 
+        // Add AngularJs config
         var config = "$.material.init();";
         jhipsterFunc.addAngularJsConfig([''], config, 'Initialize material design');
 
+        // Fix navbar menu display
         var navbarFullPath = 'src/main/webapp/scripts/components/navbar/navbar.html';
         var file = fs.readFileSync(navbarFullPath, 'utf8');
         file = file.replace(/class="dropdown pointer"/g, 'dropdown');
         file = file.replace(/class="dropdown-toggle" data-toggle="dropdown"/g, 'dropdown-toggle');
         fs.writeFileSync(navbarFullPath, file);
+
+        // Fix error field display
+        var style = '.form-group .help-block {\n' +
+            '    position: static;\n' +
+            '}';
+        jhipsterFunc.addMainCSSStyle(this.useSass, style, 'Fix error field display');
 
         done();
     },

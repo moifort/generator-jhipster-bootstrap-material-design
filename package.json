@@ -1,41 +1,41 @@
 {
-  "name": "generator-jhipster-bootstrap-material-design",
-  "version": "0.0.1",
-  "description": "Add Material design to your JHipster application",
-  "homepage": "https://github.com/moifort/generator-jhipster-bootstrap-material-design",
-  "author": {
-    "name": "Thibaut Mottet",
-    "email": "thibaut.mottet@gmail.com",
-    "url": "http://blog.mottet.me/"
-  },
-  "files": [
-    "generators"
-  ],
-  "main": "generators/index.js",
-  "keywords": [
-    "yeoman-generator",
-    "jhipster-module"
-  ],
-  "dependencies": {
-    "yeoman-generator": "0.21.1",
-    "chalk": "1.0.0",
-    "yosay": "1.0.2",
-    "generator-jhipster": "2.25.0"
-  },
-  "devDependencies": {
-    "yeoman-assert": "2.0.0",
-    "gulp": "3.6.0",
-    "gulp-eslint": "1.0.0",
-    "gulp-exclude-gitignore": "1.0.0",
-    "gulp-istanbul": "0.9.0",
-    "gulp-mocha": "2.0.0",
-    "gulp-plumber": "1.0.0",
-    "gulp-nsp": "2.1.0"
-  },
-  "repository": "moifort/generator-jhipster-bootstrap-material-design",
-  "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
-  },
-  "license": "Apache-2.0"
+    "name": "generator-jhipster-bootstrap-material-design",
+    "version": "0.0.2",
+    "description": "Add Material design to your JHipster application",
+    "homepage": "https://github.com/moifort/generator-jhipster-bootstrap-material-design",
+    "author": {
+        "name": "Thibaut Mottet",
+        "email": "thibaut.mottet@gmail.com",
+        "url": "http://blog.mottet.me/"
+    },
+    "files": [
+        "generators"
+    ],
+    "main": "generators/index.js",
+    "keywords": [
+        "yeoman-generator",
+        "jhipster-module"
+    ],
+    "dependencies": {
+        "yeoman-generator": "0.21.1",
+        "chalk": "1.0.0",
+        "yosay": "1.0.2",
+        "generator-jhipster": ">=2.27.0"
+    },
+    "devDependencies": {
+        "yeoman-assert": "2.0.0",
+        "gulp": "3.6.0",
+        "gulp-eslint": "1.0.0",
+        "gulp-exclude-gitignore": "1.0.0",
+        "gulp-istanbul": "0.9.0",
+        "gulp-mocha": "2.0.0",
+        "gulp-plumber": "1.0.0",
+        "gulp-nsp": "2.1.0"
+    },
+    "repository": "moifort/generator-jhipster-bootstrap-material-design",
+    "scripts": {
+        "prepublish": "gulp prepublish",
+        "test": "gulp"
+    },
+    "license": "WTFPL-2.0"
 }
