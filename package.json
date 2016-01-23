@@ -1,6 +1,6 @@
 {
     "name": "generator-jhipster-bootstrap-material-design",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Add Material design to your JHipster application",
     "homepage": "https://github.com/moifort/generator-jhipster-bootstrap-material-design",
     "author": {
@@ -20,7 +20,7 @@
         "yeoman-generator": "0.21.1",
         "chalk": "1.0.0",
         "yosay": "1.0.2",
-        "generator-jhipster": ">=2.26.0"
+        "generator-jhipster": ">=2.27.0"
     },
     "devDependencies": {
         "yeoman-assert": "2.0.0",
