@@ -2,6 +2,10 @@
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Add Material design to your JHipster application
 
+## Compatibility
+
+**This version is not compatible with Jhipster 3.0.0**, more information on the issue #11
+
 ## Usage
 
 This is a [JHipster](http://jhipster.github.io/) module, that is meant to be use in a JHipster application.
