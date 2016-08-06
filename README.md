@@ -4,7 +4,7 @@
 
 ## Compatibility
 
-**This version is not compatible with Jhipster 3.0.0**, more information on the issue #11
+**This version is compatible with Jhipster 3 and greater!**
 
 ## Usage
 

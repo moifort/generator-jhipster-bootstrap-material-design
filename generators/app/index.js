@@ -53,6 +53,7 @@ module.exports = yeoman.generators.Base.extend({
         this.angularAppName = jhipsterVar.angularAppName;
         this.frontendBuilder = jhipsterVar.frontendBuilder;
         this.useSass = jhipsterVar.useSass;
+        this.webappDir = jhipsterVar.webappDir;
 
         this.installDesign = this.props.installDesign;
 
@@ -61,16 +62,14 @@ module.exports = yeoman.generators.Base.extend({
         }
 
         // Add dependencies
-        jhipsterFunc.addBowerDependency('bootstrap', '3.3.6');
         jhipsterFunc.addBowerDependency('arrive', '2.3.0');
-        jhipsterFunc.addBowerDependency('bootstrap-material-design', '0.5.6');
+        jhipsterFunc.addBowerDependency('bootstrap-material-design', '0.5.10');
 
         // Add AngularJs config
-        var config = "$.material.init();";
-        jhipsterFunc.addAngularJsConfig([''], config, 'Initialize material design');
+        jhipsterFunc.copyTemplate(this.webappDir + 'app/blocks/config/_bootstrap-material.config.js', this.webappDir + 'app/blocks/config/bootstrap-material.config.js', 'template', this, null, true);
 
         // Fix navbar menu display
-        var navbarFullPath = 'src/main/webapp/scripts/components/navbar/navbar.html';
+        var navbarFullPath = 'src/main/webapp/app/layouts/navbar/navbar.html';
         var file = fs.readFileSync(navbarFullPath, 'utf8');
         file = file.replace(/class="dropdown pointer"/g, 'dropdown');
         file = file.replace(/class="dropdown-toggle" data-toggle="dropdown"/g, 'dropdown-toggle');
@@ -87,20 +86,13 @@ module.exports = yeoman.generators.Base.extend({
 
     install: function () {
         var injectDependenciesAndConstants = function () {
-            switch (this.frontendBuilder) {
-                case 'gulp':
-                    this.spawnCommand('gulp', ['ngconstant:dev', 'wiredep:test', 'wiredep:app']);
-                    break;
-                case 'grunt':
-                default:
-                    this.spawnCommand('grunt', ['ngconstant:dev', 'wiredep']);
-            }
+            this.spawnCommand('gulp', ['install']);
         };
 
         this.installDependencies({
-                callback: injectDependenciesAndConstants.bind(this)
-            }
-        );
+          bower: true,
+          npm: false,
+          callback: injectDependenciesAndConstants.bind(this)
+        });
     }
 });
-
