@@ -1,6 +1,7 @@
 'use strict';
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
+var packagejs = require(__dirname + '/../../package.json');
 var yosay = require('yosay');
 var fs = require('fs');
 
@@ -25,7 +26,7 @@ module.exports = yeoman.generators.Base.extend({
 
         // Have Yeoman greet the user.
         this.log(yosay(
-            'Welcome to the ' + chalk.red('JHipster Bootstrap Material design') + ' generator!'
+            'Welcome to the ' + chalk.red('JHipster Bootstrap Material design') + ' generator! ' + chalk.yellow('v' + packagejs.version + '\n')
         ));
 
         var prompts = [
@@ -94,5 +95,12 @@ module.exports = yeoman.generators.Base.extend({
           npm: false,
           callback: injectDependenciesAndConstants.bind(this)
         });
+    },
+
+    end: function() {
+
+        if (this.useSass) {
+            this.log('\n' + chalk.bold.green('You are using SASS! Please make sure to check the documentation on using SASS: https://github.com/moifort/generator-jhipster-bootstrap-material-design'));
+        }
     }
 });

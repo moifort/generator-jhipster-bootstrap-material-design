@@ -29,6 +29,23 @@ Then run the module on a JHipster generated application:
 yo jhipster-bootstrap-material-design
 ```
 
+### Using SASS
+
+When you use sass you need to modify your ``index.html`` a little bit to make sure material design styles are not overwritten bt default bootstrap styles again:
+
+```html
+<!-- build:css content/css/vendor.css -->
+<link rel="stylesheet" href="content/css/vendor.css">
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
+<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css">
+<!-- endinject -->
+<!-- endbuild -->
+```html
+
+You should make sure that the ``vendor.css`` is before all material design stylesheets in your ``index.html``!
+
 ## Bootstrap Material Design  
 
 Material Design for Bootstrap is a theme for Bootstrap 3 which lets you use the new Google Material Design in your favorite front-end framework.
