@@ -31,7 +31,7 @@ yo jhipster-bootstrap-material-design
 
 ### Using SASS
 
-When you use sass you need to modify your ``index.html`` a little bit to make sure material design styles are not overwritten bt default bootstrap styles again:
+When you use sass you need to modify your ``index.html`` a little bit to make sure material design styles are not overwritten by default bootstrap styles again:
 
 ```html
 <!-- build:css content/css/vendor.css -->
@@ -42,7 +42,7 @@ When you use sass you need to modify your ``index.html`` a little bit to make su
 <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css">
 <!-- endinject -->
 <!-- endbuild -->
-```html
+```
 
 You should make sure that the ``vendor.css`` is before all material design stylesheets in your ``index.html``!
 
