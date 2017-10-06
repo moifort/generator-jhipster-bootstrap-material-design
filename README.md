@@ -19,9 +19,23 @@ This is a [JHipster](http://jhipster.github.io/) module, that is meant to be use
 
 As this is a [JHipster](http://jhipster.github.io/) module, we expect you have JHipster and its related tools already installed.
 
+### with NPM
+
 ```bash
 npm install -g generator-jhipster-bootstrap-material-design
 ```
+
+### with Yarn
+
+```bash
+yarn global add generator-jhipster-bootstrap-material-design
+```
+
+To update this module:
+```bash
+yarn global upgrade generator-jhipster-bootstrap-material-design
+```
+## Usage
 
 Then run the module on a JHipster generated application:
 
