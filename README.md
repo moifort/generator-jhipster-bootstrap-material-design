@@ -1,3 +1,5 @@
+**DEPRECATED this repository is no longer maintained**
+
 # generator-jhipster-bootstrap-material-design
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Add Material design to your JHipster application
