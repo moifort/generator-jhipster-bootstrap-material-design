@@ -66,8 +66,8 @@ You should make sure that the ``vendor.css`` is before all material design style
 
 Material Design for Bootstrap is a theme for Bootstrap 3 which lets you use the new Google Material Design in your favorite front-end framework.
 
-- Github: https://github.com/FezVrasta/bootstrap-material-design
-- Website: http://fezvrasta.github.io/bootstrap-material-design/
+- Github: https://github.com/mdbootstrap/mdb-ui-kit
+- Website: https://mdbootstrap.com/
 
 ## Screenshot
 
